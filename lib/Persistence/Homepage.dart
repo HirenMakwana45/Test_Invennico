@@ -39,8 +39,7 @@ class _HomepageState extends State<Homepage> {
   }
 
   Future<void> _displayEditDialog(int index) async {
-    _AddItem.text =
-        _todos[index].name; // Pre-fill the dialog with the current task's name.
+    _AddItem.text = _todos[index].name;
     return showDialog<void>(
       context: context,
       barrierDismissible: false,
